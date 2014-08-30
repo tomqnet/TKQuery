@@ -23,7 +23,7 @@ namespace TKQuery
         /// <param name="name"></param>
         /// <param name="value"></param>
         public QueryParameter(string name, object value)
-        {            
+        {
             this.name = name;
             this.value = value;
         }

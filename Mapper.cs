@@ -84,7 +84,7 @@ namespace TKQuery
                     var propertyObject = CreateInstance(propertyType, null);
                     returnObj = Process(propertyObject, datas, propertyPath);
                     //primitive type cannot be set to null, missing fields in results
-                    SetValue(property, orginalObj, returnObj);                    
+                    SetValue(property, orginalObj, returnObj);
                 }
                 //return object with filled properties
                 return orginalObj;
@@ -119,11 +119,11 @@ namespace TKQuery
             if (returnObj == null)
             {
                 returnObj = default(T1);
-            }            
+            }
             return returnObj;
         }
 
-        private ConstructorInfo GetValidConstructor(ConstructorInfo[] constructors, List< IDictionary<string, object>> datas)
+        private ConstructorInfo GetValidConstructor(ConstructorInfo[] constructors, List<IDictionary<string, object>> datas)
         {
             if (datas.Count() > 0)
             {
@@ -224,7 +224,7 @@ namespace TKQuery
             {
                 convertedValue = Convert.ToInt32(value);
             }
-            property.SetValue(orginalObj, convertedValue);            
+            property.SetValue(orginalObj, convertedValue);
         }
 
         /// <summary>

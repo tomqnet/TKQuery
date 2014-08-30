@@ -13,7 +13,7 @@ namespace TKQuery
     public class QueryManager
     {
         private IDbConnection connection;
-        private long queriesCount;        
+        private long queriesCount;
         private IDbTransaction transaction;
         private int MAX_RETRY_COUNT = 3;
 
@@ -23,7 +23,7 @@ namespace TKQuery
         }
 
         public long QueriesCount { get { return queriesCount; } }
-                
+
         public QueryManager(IDbConnection connection)
         {
             this.connection = connection;
@@ -81,7 +81,7 @@ namespace TKQuery
             }
             catch (Exception ex)
             {
-                if (retryCount == MAX_RETRY_COUNT) 
+                if (retryCount == MAX_RETRY_COUNT)
                 {
                     throw ex;
                 }

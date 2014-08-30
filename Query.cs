@@ -55,9 +55,9 @@ namespace TKQuery
             {
                 var sb = new StringBuilder();
                 sb.Append("@");
-                sb.Append((unnamedParameters.Count + 1).ToString());               
+                sb.Append((unnamedParameters.Count + 1).ToString());
                 var parameterName = sb.ToString();
-                unnamedParameters.Add(new QueryParameter(parameterName,unnamedParameter));
+                unnamedParameters.Add(new QueryParameter(parameterName, unnamedParameter));
             }
             this.parameters = unnamedParameters.ToArray();
             this.id = id;
@@ -71,5 +71,5 @@ namespace TKQuery
         }
 
     }
-    
+
 }
