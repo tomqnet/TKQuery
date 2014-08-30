@@ -1,0 +1,5 @@
+obj/*
+.dropbox
+*.pdb
+*.csproj
+Properties
